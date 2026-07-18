@@ -115,7 +115,7 @@ form.addEventListener("submit", async (e) => {
         console.error(error);
 
         msg.className = "mt-4 p-3 rounded-xl text-center bg-red-100 text-red-700";
-        msg.innerText = "Erro ao enviar os dados.";
+        msg.innerText = error.message;
 
         return;
     }
