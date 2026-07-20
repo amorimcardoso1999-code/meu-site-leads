@@ -101,7 +101,7 @@ form.addEventListener("submit", async (e) => {
     const telefone = document.getElementById("telefone").value;
 
     const { error } = await db
-        .from("leads")
+        .from("pistas")
         .insert([
             {
                 nome,
